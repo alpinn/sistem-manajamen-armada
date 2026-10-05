@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Fira Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Fira Code', ui-monospace, monospace;
+
+  --color-background: #f8fafc;
+  --color-card: #ffffff;
+  --color-foreground: #020617;
+  --color-muted-foreground: #475569;
+  --color-border: #e2e8f0;
+  --color-control: #64748b;
+  --color-primary: #0f172a;
+  --color-accent: #0369a1;
+  --color-ring: #0f172a;
+  --color-error: #b91c1c;
+  --color-error-bg: #fef2f2;
+  --color-warning: #92400e;
+
+  --color-status-transit: #1d4ed8;
+  --color-status-transit-bg: #eff6ff;
+  --color-status-transit-border: #bfdbfe;
+  --color-status-incoming: #92400e;
+  --color-status-incoming-bg: #fffbeb;
+  --color-status-incoming-border: #fde68a;
+  --color-status-stopped: #15803d;
+  --color-status-stopped-bg: #f0fdf4;
+  --color-status-stopped-border: #bbf7d0;
+  --color-status-unknown: #334155;
+  --color-status-unknown-bg: #f1f5f9;
+  --color-status-unknown-border: #cbd5e1;
+}
+
+@layer base {
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+}
