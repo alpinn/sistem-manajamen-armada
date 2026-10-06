@@ -18,7 +18,7 @@ yarn dev
 
 Setelah `cp`, isi `VITE_MBTA_API_KEY` di `.env.local`. Aplikasi lalu terbuka di http://localhost:5173.
 
-API key bersifat opsional. Tanpa key, MBTA membatasi request jauh lebih ketat dan aplikasi akan menampilkan pesan batas permintaan. Dengan key, batasnya 1000 request per menit.
+API key bersifat opsional. Tanpa key, MBTA membatasi request jauh lebih ketat dan aplikasi akan menampilkan pesan batas permintaan. Dengan key, batasnya 1000 request per menit. API key gratis dapat didaftarkan di https://api-v3.mbta.com/.
 
 | Perintah            | Fungsi                                   |
 | ------------------- | ---------------------------------------- |
